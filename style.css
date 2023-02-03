@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("pictures/pocket-watch-3.jpg");
+    background-size: cover;
+    background-position: left 20% bottom 40%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    width: 100vw;
+    height: 100%;
+    opacity: 0.75;
+  }
+  /* pictures/pocket-watch-3 */
+  /* pictures/hourglass.jpg */
+  
+  .main-image img {
+    margin-top: 4rem;
+    opacity: 0.75;
+  }
+
+  .main-image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(61, 52, 174, 0.63);
+    z-index: 100;
+  }
+
+  .general-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 200;
+    background-color: #5249C5ff;
+    padding: 2rem;
+    width: 40rem;
+    border-radius: 20px;
+
+  }
+
+  .total-field {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .total-field-circle {
+    position: relative;
+    border-radius: 95px;
+    background-color: white;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .total-field input {
+    position: absolute;
+    bottom: 35%;
+    left: 32px;
+    text-align: center;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+    width: 120px;
+  }
+
+  .total-field input:focus {
+    outline: none;
+    border-color: #ccc;
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .calculator input {
+    margin: 0.5rem;
+    height: 4rem;
+    width: 11rem;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+  }
+
+  .calculator input:focus {
+    outline: none;
+    background-color: rgb(227, 220, 231);
+    border-color: none;
+  }
+
+.action-buttons {
+    display: inline;
+    text-align: center;
+}
+
+.action-buttons button {
+    margin: 1.1rem;
+    height: 2.4rem;
+    width: 8rem;
+    background-color: #011638;
+    color: white;
+    border: 1.5px solid #011638;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-buttons button:hover,
+.action-buttons button a:hover,
+.action-buttons button:active,
+.action-buttons button a:active {
+  background-color: #d8dbe2;
+  color: #011638;
+  border:none;
+}
+
+.action-buttons button:focus,
+.action-buttons button a:focus {
+  outline: none;
+}
+
+.action-buttons button a {
+    text-decoration: none;
+    color: white;
+}
+
+
