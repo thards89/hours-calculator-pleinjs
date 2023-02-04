@@ -70,8 +70,6 @@ const clear = () => {
 		minutesInputs[i].value = ''
 	  }
 	  results.value = ""
-	  moreLevel.remove()
-	  
 	}
 
 calculateButton.addEventListener("click", getTotal);
